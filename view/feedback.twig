@@ -1,0 +1,22 @@
+{% extends "light.twig" %}
+
+{% block title %}: {% trans "Feedback" %}{% endblock %}
+{% block sidebar %}{% endblock %}
+{% block headernav %}{% endblock %}
+{% block content %}
+{% if request.lang == 'pt' %}
+<div class="feedback-logo">
+  <h1>{% trans "Feedback" %}</h1>
+</div>
+<div class="container feedback-box">
+    <p>Se você ou sua instituição gostariam de contribuir com o Input-LASeD, por favor escreva um email para <a href="gisane@unicentro.br">lasedunicentro@gmail.com</a>.</p>
+</div>
+{% elseif request.lang == 'en' %}
+<div class="feedback-logo">
+  <h1>{% trans "Feedback" %}</h1>
+</div>
+<div class="container feedback-box">
+    <p>If you or your institution would like to contribute to Input-LASeD, please write an email to us at <a href="gisane@unicentro.br">lasedunicentro@gmail.com</a. </p>
+</div>
+{% endif %}
+{% endblock %}
